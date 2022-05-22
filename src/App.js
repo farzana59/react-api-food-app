@@ -7,6 +7,9 @@ function App(){
   const [query, setQuery] = useState("");
   const [recipes,setRecipes] = useState ([])
 
+  const Your_APP_ID = [ Please Enter your own App ID here ]
+  const Your_APP_KEY = [ Please Enter your own App KEY here ]
+
   var url= `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id={Your_APP_ID}&app_key={Your_APP_KEY}`;
 
  async function getRecipes(){
